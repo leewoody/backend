@@ -1,0 +1,33 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Open-Xchange Thread Pool Bundle
+Bundle-SymbolicName: com.openexchange.threadpool
+Bundle-Version: 7.8.4
+Bundle-Vendor: OX Software GmbH
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Import-Package: com.eaio.util.text,
+ com.openexchange.config,
+ com.openexchange.exception,
+ com.openexchange.java,
+ com.openexchange.log,
+ com.openexchange.management,
+ com.openexchange.marker,
+ com.openexchange.osgi,
+ com.openexchange.osgi.annotation,
+ com.openexchange.server,
+ com.openexchange.session,
+ com.openexchange.sessiond,
+ com.openexchange.startup,
+ javax.management,
+ org.apache.commons.logging,
+ org.cliffc.high_scale_lib,
+ org.osgi.framework,
+ org.osgi.service.event,
+ org.osgi.util.tracker,
+ org.slf4j,
+ sun.misc
+Export-Package: com.openexchange.processing,
+ com.openexchange.threadpool,
+ com.openexchange.threadpool.behavior,
+ com.openexchange.timer
+Bundle-Activator: com.openexchange.threadpool.osgi.ThreadPoolActivator

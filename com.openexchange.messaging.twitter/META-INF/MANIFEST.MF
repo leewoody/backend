@@ -1,0 +1,32 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Open-Xchange Messaging Twitter Bundle
+Bundle-SymbolicName: com.openexchange.messaging.twitter
+Bundle-Version: 7.8.4
+Bundle-Vendor: OX Software GmbH
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Import-Package: com.openexchange.datatypes.genericonf,
+ com.openexchange.exception,
+ com.openexchange.groupware,
+ com.openexchange.html,
+ com.openexchange.i18n,
+ com.openexchange.java,
+ com.openexchange.log,
+ com.openexchange.messaging,
+ com.openexchange.messaging.generic,
+ com.openexchange.messaging.generic.internet,
+ com.openexchange.oauth,
+ com.openexchange.oauth.scope,
+ com.openexchange.osgi,
+ com.openexchange.secret,
+ com.openexchange.secret.osgi.tools,
+ com.openexchange.server,
+ com.openexchange.session,
+ com.openexchange.sessiond,
+ com.openexchange.twitter,
+ org.apache.commons.logging,
+ org.osgi.framework,
+ org.osgi.service.event,
+ org.osgi.util.tracker,
+ org.slf4j
+Bundle-Activator: com.openexchange.messaging.twitter.osgi.TwitterMessagingActivator

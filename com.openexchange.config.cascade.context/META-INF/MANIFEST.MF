@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Config Cascade Context Level Attributes Plugin
+Bundle-SymbolicName: com.openexchange.config.cascade.context
+Bundle-Version: 7.8.4
+Bundle-Vendor: OX Software GmbH
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Import-Package: com.openexchange.config,
+ com.openexchange.config.cascade,
+ com.openexchange.context,
+ com.openexchange.exception,
+ com.openexchange.groupware,
+ com.openexchange.groupware.contexts,
+ com.openexchange.groupware.contexts.impl,
+ com.openexchange.groupware.userconfiguration,
+ com.openexchange.java,
+ com.openexchange.osgi,
+ com.openexchange.server,
+ com.openexchange.userconf,
+ org.osgi.framework
+Bundle-Activator: com.openexchange.config.cascade.context.osgi.ContextConfigCascadeActivator

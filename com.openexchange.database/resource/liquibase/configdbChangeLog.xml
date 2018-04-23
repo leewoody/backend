@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- *************************************************************************************
+    Hints:
+       - changeSet id has to be unique as it is used as primary key for DATABASECHANGELOG table
+       - use failOnError param to define if a successful execution of the ChangeSet is required
+       - DDLs for the configdb have additionally be considered within the configdb.sql file (for new installations)
+ ************************************************************************************* -->
+
+<databaseChangeLog xmlns="urn:liquibase"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="urn:liquibase /liquibase/dbchangelog-3.0.xsd"
+    logicalFilePath="configdbChangeLog">
+
+
+    <!-- ******************************************************* -->
+    <!-- ************** Release 7.6.1 starts here ************** -->
+    <!-- ******************************************************* -->
+
+    <changeSet id="7.6.1-milestone" author="martin.schneider@open-xchange.com">
+        <tagDatabase tag="7.6.1-milestone" />
+    </changeSet>
+
+    <changeSet id="7.6.1:login2context:login_info" author="martin.schneider@open-xchange.com">
+        <preConditions onFail="MARK_RAN">
+            <customPrecondition
+                className="liquibase.precondition.ext.ColumnSizePrecondition">
+                <param name="expectedSize" value="255" />
+                <param name="tableName" value="login2context" />
+                <param name="columnName" value="login_info" />
+            </customPrecondition>
+        </preConditions>
+        <comment>Fix for bug 33418: enhances the login_info column to 255
+            characters</comment>
+        <modifyDataType columnName="login_info" newDataType="varchar(255)"
+            tableName="login2context" />
+        <dropDefaultValue columnDataType="varchar(255)"
+            columnName="login_info" tableName="login2context" />
+        <rollback>
+            <dropDefaultValue tableName="login2context"
+                columnName="login_info" />
+            <modifyDataType tableName="login2context" columnName="login_info"
+                newDataType="varchar(128)" />
+            <dropDefaultValue columnDataType="varchar(128)"
+                columnName="login_info" tableName="login2context" />
+        </rollback>
+    </changeSet>
+
+    <!-- ******************************************************* -->
+    <!-- ************** Release 7.6.2 starts here ************** -->
+    <!-- ******************************************************* -->
+
+    <changeSet id="7.6.2:changelog:addprimarykey" author="martin.schneider@open-xchange.com">
+        <preConditions onFail="MARK_RAN">
+            <not>
+                <primaryKeyExists tableName="DATABASECHANGELOG"/>
+            </not>
+        </preConditions>
+        <comment>Add missing primary key for DATABASECHANGELOG</comment>
+        <addPrimaryKey columnNames="id, author, filename" tableName="DATABASECHANGELOG" />
+    </changeSet>
+
+    <changeSet id="7.6.2:context_server2db_pool:addpoolandschemaindex" author="thorben.betten@open-xchange.com">
+        <preConditions onFail="MARK_RAN">
+            <not>
+                <indexExists tableName="context_server2db_pool"  columnNames="write_db_pool_id,db_schema"/>
+            </not>
+        </preConditions>
+        <comment>Add index to context_server2db_pool table for columns write_db_pool_id and db_schema</comment>
+        <createIndex indexName="poolAndSchema" tableName="context_server2db_pool">
+            <column name="write_db_pool_id"/>
+            <column name="db_schema"/>
+        </createIndex>
+        <rollback>
+            <dropIndex indexName="poolAndSchema" tableName="context_server2db_pool"/>
+        </rollback>
+    </changeSet>
+
+    <changeSet id="7.6.2:context2push_registration" author="thorben.betten@open-xchange.com">
+        <preConditions onFail="MARK_RAN">
+            <not>
+                <tableExists tableName="context2push_registration" />
+            </not>
+        </preConditions>
+        <comment>Creates the 'context2push_registration' table</comment>
+        <sql>
+            CREATE TABLE context2push_registration (
+            cid INT4 UNSIGNED NOT NULL,
+            PRIMARY KEY (cid)
+            ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+        </sql>
+        <rollback>
+            <dropTable tableName="context2push_registration" />
+        </rollback>
+    </changeSet>
+
+    <changeSet id="7.6.2:milestone" author="martin.schneider@open-xchange.com">
+        <tagDatabase tag="7.6.2:milestone" />
+    </changeSet>
+
+    <!-- ******************************************************* -->
+    <!-- ************** Release 7.8.0 starts here ************** -->
+    <!-- ******************************************************* -->
+
+    <changeSet id="7.8.0:context:addcontextnameunique" author="thorben.betten@open-xchange.com">
+        <preConditions onFail="MARK_RAN">
+            <not>
+                <indexExists tableName="context" columnNames="name"/>
+            </not>
+        </preConditions>
+        <comment>Creates a UNIQUE constraint on name column of the context table</comment>
+        <sql>
+            ALTER TABLE context ADD UNIQUE KEY `context_name_unique` (name)
+        </sql>
+        <rollback>
+            <dropIndex indexName="context_name_unique" tableName="context"/>
+        </rollback>
+    </changeSet>
+
+    <!-- ******************************************************* -->
+    <!-- ************** Release 7.8.1 starts here ************** -->
+    <!-- ******************************************************* -->
+
+    <changeSet id="7.8.1:replicationMonitor:createForConfigDB" author="martin.schneider@open-xchange.com" failOnError="true">
+        <preConditions onFail="MARK_RAN">
+            <not>
+                <tableExists tableName="replicationMonitor" />
+            </not>
+        </preConditions>
+        <comment>
+            Add table 'replicationMonitor' for master/slave replication.
+        </comment>
+        <sql>
+            CREATE TABLE replicationMonitor (
+                cid int(10) unsigned NOT NULL,
+                transaction bigint(20) NOT NULL,
+                PRIMARY KEY (cid)
+            ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+            INSERT INTO replicationMonitor (cid,transaction) VALUES (0,0);
+        </sql>
+        <rollback>
+            <dropTable tableName="replicationMonitor" />
+        </rollback>
+    </changeSet>
+    
+    <!-- ******************************************************* -->
+    <!-- ************** Release 7.8.2 starts here ************** -->
+    <!-- ******************************************************* -->
+    
+    <changeSet id="7.8.2:filestore2user" author="thorben.betten@open-xchange.com">
+        <preConditions onFail="MARK_RAN">
+            <not>
+                <tableExists tableName="filestore2user" />
+            </not>
+        </preConditions>
+        <comment>Creates the 'filestore2user' table</comment>
+        <sql>
+        	CREATE TABLE filestore2user (
+    		cid INT4 UNSIGNED NOT NULL,
+    		user INT4 UNSIGNED NOT NULL,
+    		filestore_id INT4 UNSIGNED,
+    		PRIMARY KEY (cid, user, filestore_id)
+			) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+        </sql>
+        <rollback>
+            <dropTable tableName="filestore2user" />
+        </rollback>
+    </changeSet>
+    
+    <!-- ******************************************************* -->
+    <!-- ************** Release 7.8.3 starts here ************** -->
+    <!-- ******************************************************* -->
+    
+    <changeSet id="7.8.3:advertisement_config:createForConfigDB" author="kevin.ruthmann@open-xchange.com">
+        <preConditions onFail="MARK_RAN">
+            <not>
+                <tableExists tableName="advertisement_config" />
+            </not>
+        </preConditions>
+        <comment>Creates the 'advertisement_config' table</comment>
+        <sql>
+        	CREATE TABLE advertisement_config (
+    		configId int NOT NULL AUTO_INCREMENT,
+    		reseller VARCHAR(128) NOT NULL,
+    		config text NOT NULL,
+    		PRIMARY KEY (configId)
+			) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+        </sql>
+        <rollback>
+            <dropTable tableName="advertisement_config" />
+        </rollback>
+    </changeSet>
+    
+    <changeSet id="7.8.3:advertisement_mapping:createForConfigDB" author="kevin.ruthmann@open-xchange.com">
+        <preConditions onFail="MARK_RAN">
+            <not>
+                <tableExists tableName="advertisement_mapping" />
+            </not>
+        </preConditions>
+        <comment>Creates the 'advertisement_mapping' table</comment>
+        <sql>
+        	CREATE TABLE advertisement_mapping (
+    		reseller VARCHAR(128) NOT NULL,
+    		package VARCHAR(128) NOT NULL,
+    		configId int NOT NULL,
+    		PRIMARY KEY (reseller, package)
+			) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+        </sql>
+        <rollback>
+            <dropTable tableName="advertisement_mapping" />
+        </rollback>
+    </changeSet>
+
+</databaseChangeLog>

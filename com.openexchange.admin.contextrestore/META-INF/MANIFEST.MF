@@ -1,0 +1,30 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Context restoration
+Bundle-SymbolicName: com.openexchange.admin.contextrestore
+Bundle-Version: 7.8.4
+Bundle-Activator: com.openexchange.admin.contextrestore.osgi.Activator
+Bundle-Vendor: OX Software GmbH
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Import-Package: com.mysql.jdbc,
+ com.openexchange.admin.contextrestore.rmi,
+ com.openexchange.admin.contextrestore.rmi.exceptions,
+ com.openexchange.admin.storage.interfaces,
+ com.openexchange.admin.tools,
+ com.openexchange.config,
+ com.openexchange.database,
+ com.openexchange.databaseold,
+ com.openexchange.exception,
+ com.openexchange.groupware,
+ com.openexchange.groupware.contexts,
+ com.openexchange.log,
+ com.openexchange.osgi,
+ com.openexchange.server.impl,
+ org.apache.commons.io.output,
+ org.apache.commons.logging,
+ org.osgi.framework,
+ org.slf4j
+Require-Bundle: com.openexchange.admin.plugin.hosting,
+ com.openexchange.admin.rmi,
+ com.openexchange.admin
+Bundle-ClassPath: .

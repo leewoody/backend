@@ -1,0 +1,167 @@
+open-xchange-cassandra (7.8.4-27) stable; urgency=medium
+
+  * Build for patch 2018-04-12 (4674)
+
+ -- Ioannis Chouklis <ioannis.chouklis@open-xchange.com>  Thu, 12 Apr 2018 22:41:00 +0200
+
+open-xchange-cassandra (7.8.4-26) stable; urgency=medium
+
+  * Build for patch 2018-04-03 (4642)
+
+ -- Ioannis Chouklis <ioannis.chouklis@open-xchange.com>  Tue, 03 Apr 2018 10:42:38 +0200
+
+open-xchange-cassandra (7.8.4-25) stable; urgency=medium
+
+  * Build for patch 2018-03-26 (4619)
+
+ -- Ioannis Chouklis <ioannis.chouklis@open-xchange.com>  Fri, 23 Mar 2018 10:50:15 +0100
+
+open-xchange-cassandra (7.8.4-24) stable; urgency=medium
+
+  * Build for patch 2018-03-12 (4602)
+
+ -- Ioannis Chouklis <ioannis.chouklis@open-xchange.com>  Mon, 12 Mar 2018 11:20:39 +0100
+
+open-xchange-cassandra (7.8.4-23) stable; urgency=medium
+
+  * Build for patch 2018-02-26 (4583)
+
+ -- Ioannis Chouklis <ioannis.chouklis@open-xchange.com>  Mon, 26 Feb 2018 15:45:48 +0100
+
+open-xchange-cassandra (7.8.4-22) stable; urgency=medium
+
+  * Build for patch 2018-02-05 (4555)
+
+ -- Ioannis Chouklis <ioannis.chouklis@open-xchange.com>  Mon, 29 Jan 2018 17:35:19 +0100
+
+open-xchange-cassandra (7.8.4-21) stable; urgency=medium
+
+  * Build for patch 2018-01-22 (4538)
+
+ -- Ioannis Chouklis <ioannis.chouklis@open-xchange.com>  Mon, 15 Jan 2018 11:01:59 +0100
+
+open-xchange-cassandra (7.8.4-20) stable; urgency=medium
+
+  * Build for patch 2018-01-08 (4516)
+
+ -- Ioannis Chouklis <ioannis.chouklis@open-xchange.com>  Tue, 02 Jan 2018 16:58:09 +0100
+
+open-xchange-cassandra (7.8.4-19) stable; urgency=medium
+
+  * Build for Patch 2017-12-11 (4473)
+
+ -- Ioannis Chouklis <ioannis.chouklis@open-xchange.com>  Fri, 08 Dec 2017 16:20:52 +0100
+
+open-xchange-cassandra (7.8.4-18) stable; urgency=medium
+
+  * Build for patch 2017-11-20 (4441)
+
+ -- Ioannis Chouklis <ioannis.chouklis@open-xchange.com>  Thu, 16 Nov 2017 10:15:52 +0100
+
+open-xchange-cassandra (7.8.4-17) stable; urgency=medium
+
+  * Build for patch 2017-11-15 (4448)
+
+ -- Ioannis Chouklis <ioannis.chouklis@open-xchange.com>  Tue, 14 Nov 2017 12:16:30 +0100
+
+open-xchange-cassandra (7.8.4-16) stable; urgency=medium
+
+  * Build for patch 2017-10-30 (4415)
+
+ -- Ioannis Chouklis <ioannis.chouklis@open-xchange.com>  Wed, 25 Oct 2017 15:15:12 +0200
+
+open-xchange-cassandra (7.8.4-15) stable; urgency=medium
+
+  * Build for patch 2017-10-29 (4425)
+
+ -- Ioannis Chouklis <ioannis.chouklis@open-xchange.com>  Mon, 23 Oct 2017 16:20:06 +0200
+
+open-xchange-cassandra (7.8.4-14) stable; urgency=medium
+
+  * Build for patch 2017-10-16 (4394)
+
+ -- Ioannis Chouklis <ioannis.chouklis@open-xchange.com>  Mon, 16 Oct 2017 09:17:36 +0200
+
+open-xchange-cassandra (7.8.4-13) stable; urgency=medium
+
+  * Build for patch 2017-10-02 (4377)
+
+ -- Ioannis Chouklis <ioannis.chouklis@open-xchange.com>  Wed, 27 Sep 2017 14:50:54 +0200
+
+open-xchange-cassandra (7.8.4-12) stable; urgency=medium
+
+  * Build for patch 2017-09-22 (4373)
+
+ -- Ioannis Chouklis <ioannis.chouklis@open-xchange.com>  Thu, 21 Sep 2017 11:18:53 +0200
+
+open-xchange-cassandra (7.8.4-11) stable; urgency=medium
+
+  * Build for patch 2017-09-18 (4354)
+
+ -- Ioannis Chouklis <ioannis.chouklis@open-xchange.com>  Tue, 12 Sep 2017 11:52:14 +0200
+
+open-xchange-cassandra (7.8.4-10) stable; urgency=medium
+
+  * Build for patch 2017-09-04 (4328)
+
+ -- Ioannis Chouklis <ioannis.chouklis@open-xchange.com>  Fri, 01 Sep 2017 11:09:55 +0200
+
+open-xchange-cassandra (7.8.4-9) stable; urgency=medium
+
+  * Build for patch 2017-08-21 (4318)
+
+ -- Ioannis Chouklis <ioannis.chouklis@open-xchange.com>  Mon, 14 Aug 2017 16:26:09 +0200
+
+open-xchange-cassandra (7.8.4-8) stable; urgency=medium
+
+  * Build for patch 2017-08-07 (4304)
+
+ -- Ioannis Chouklis <ioannis.chouklis@open-xchange.com>  Tue, 01 Aug 2017 15:02:08 +0200
+
+open-xchange-cassandra (7.8.4-7) stable; urgency=medium
+
+  * Build for patch 2017-07-24 (4285)
+
+ -- Ioannis Chouklis <ioannis.chouklis@open-xchange.com>  Mon, 17 Jul 2017 11:05:53 +0200
+
+open-xchange-cassandra (7.8.4-6) stable; urgency=medium
+
+  * Build for patch 2017-07-10 (4257)
+
+ -- Ioannis Chouklis <ioannis.chouklis@open-xchange.com>  Mon, 03 Jul 2017 15:57:45 +0200
+
+open-xchange-cassandra (7.8.4-5) stable; urgency=medium
+
+  * Build for patch 2017-06-26 (4233)
+
+ -- Ioannis Chouklis <ioannis.chouklis@open-xchange.com>  Wed, 21 Jun 2017 10:35:27 +0200
+
+open-xchange-cassandra (7.8.4-4) stable; urgency=medium
+
+  * Build for patch 2017-06-08 (4180)
+
+ -- Ioannis Chouklis <ioannis.chouklis@open-xchange.com>  Tue, 06 Jun 2017 16:27:06 +0200
+
+open-xchange-cassandra (7.8.4-3) stable; urgency=medium
+
+  * First candidate for 7.8.4 release
+
+ -- Ioannis Chouklis <ioannis.chouklis@open-xchange.com>  Fri, 19 May 2017 13:31:59 +0200
+
+open-xchange-cassandra (7.8.4-2) stable; urgency=medium
+
+  * Second preview of 7.8.4 release
+
+ -- Ioannis Chouklis <ioannis.chouklis@open-xchange.com>  Thu, 04 May 2017 15:13:31 +0200
+
+open-xchange-cassandra (7.8.4-1) stable; urgency=medium
+
+  * First preview of 7.8.4 release
+
+ -- Ioannis Chouklis <ioannis.chouklis@open-xchange.com>  Mon, 03 Apr 2017 15:17:45 +0200
+
+open-xchange-cassandra (7.8.4-0) unstable; urgency=low
+
+  * Initial release
+
+ -- Ioannis Chouklis <ioannis.chouklis@open-xchange.com>  Tue, 13 Dec 2016 13:37:00 +0200

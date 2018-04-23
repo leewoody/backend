@@ -1,0 +1,167 @@
+open-xchange-userfeedback (7.8.4-27) stable; urgency=medium
+
+  * Build for patch 2018-04-12 (4674)
+
+ -- Martin Schneider <martin.schneider@open-xchange.com>  Thu, 12 Apr 2018 22:42:04 +0200
+
+open-xchange-userfeedback (7.8.4-26) stable; urgency=medium
+
+  * Build for patch 2018-04-03 (4642)
+
+ -- Martin Schneider <martin.schneider@open-xchange.com>  Tue, 03 Apr 2018 10:43:52 +0200
+
+open-xchange-userfeedback (7.8.4-25) stable; urgency=medium
+
+  * Build for patch 2018-03-26 (4619)
+
+ -- Martin Schneider <martin.schneider@open-xchange.com>  Fri, 23 Mar 2018 10:51:38 +0100
+
+open-xchange-userfeedback (7.8.4-24) stable; urgency=medium
+
+  * Build for patch 2018-03-12 (4602)
+
+ -- Martin Schneider <martin.schneider@open-xchange.com>  Mon, 12 Mar 2018 11:22:03 +0100
+
+open-xchange-userfeedback (7.8.4-23) stable; urgency=medium
+
+  * Build for patch 2018-02-26 (4583)
+
+ -- Martin Schneider <martin.schneider@open-xchange.com>  Mon, 26 Feb 2018 15:47:27 +0100
+
+open-xchange-userfeedback (7.8.4-22) stable; urgency=medium
+
+  * Build for patch 2018-02-05 (4555)
+
+ -- Martin Schneider <martin.schneider@open-xchange.com>  Mon, 29 Jan 2018 17:36:57 +0100
+
+open-xchange-userfeedback (7.8.4-21) stable; urgency=medium
+
+  * Build for patch 2018-01-22 (4538)
+
+ -- Martin Schneider <martin.schneider@open-xchange.com>  Mon, 15 Jan 2018 11:03:46 +0100
+
+open-xchange-userfeedback (7.8.4-20) stable; urgency=medium
+
+  * Build for patch 2018-01-08 (4516)
+
+ -- Martin Schneider <martin.schneider@open-xchange.com>  Tue, 02 Jan 2018 16:59:20 +0100
+
+open-xchange-userfeedback (7.8.4-19) stable; urgency=medium
+
+  * Build for Patch 2017-12-11 (4473)
+
+ -- Martin Schneider <martin.schneider@open-xchange.com>  Fri, 08 Dec 2017 16:22:24 +0100
+
+open-xchange-userfeedback (7.8.4-18) stable; urgency=medium
+
+  * Build for patch 2017-11-20 (4441)
+
+ -- Martin Schneider <martin.schneider@open-xchange.com>  Thu, 16 Nov 2017 10:17:21 +0100
+
+open-xchange-userfeedback (7.8.4-17) stable; urgency=medium
+
+  * Build for patch 2017-11-15 (4448)
+
+ -- Martin Schneider <martin.schneider@open-xchange.com>  Tue, 14 Nov 2017 12:17:36 +0100
+
+open-xchange-userfeedback (7.8.4-16) stable; urgency=medium
+
+  * Build for patch 2017-10-30 (4415)
+
+ -- Martin Schneider <martin.schneider@open-xchange.com>  Wed, 25 Oct 2017 15:17:00 +0200
+
+open-xchange-userfeedback (7.8.4-15) stable; urgency=medium
+
+  * Build for patch 2017-10-29 (4425)
+
+ -- Martin Schneider <martin.schneider@open-xchange.com>  Mon, 23 Oct 2017 16:21:46 +0200
+
+open-xchange-userfeedback (7.8.4-14) stable; urgency=medium
+
+  * Build for patch 2017-10-16 (4394)
+
+ -- Martin Schneider <martin.schneider@open-xchange.com>  Mon, 16 Oct 2017 09:19:38 +0200
+
+open-xchange-userfeedback (7.8.4-13) stable; urgency=medium
+
+  * Build for patch 2017-10-02 (4377)
+
+ -- Martin Schneider <martin.schneider@open-xchange.com>  Wed, 27 Sep 2017 14:52:06 +0200
+
+open-xchange-userfeedback (7.8.4-12) stable; urgency=medium
+
+  * Build for patch 2017-09-22 (4373)
+
+ -- Martin Schneider <martin.schneider@open-xchange.com>  Thu, 21 Sep 2017 11:19:59 +0200
+
+open-xchange-userfeedback (7.8.4-11) stable; urgency=medium
+
+  * Build for patch 2017-09-18 (4354)
+
+ -- Martin Schneider <martin.schneider@open-xchange.com>  Tue, 12 Sep 2017 11:54:20 +0200
+
+open-xchange-userfeedback (7.8.4-10) stable; urgency=medium
+
+  * Build for patch 2017-09-04 (4328)
+
+ -- Martin Schneider <martin.schneider@open-xchange.com>  Fri, 01 Sep 2017 11:11:13 +0200
+
+open-xchange-userfeedback (7.8.4-9) stable; urgency=medium
+
+  * Build for patch 2017-08-21 (4318)
+
+ -- Martin Schneider <martin.schneider@open-xchange.com>  Mon, 14 Aug 2017 16:27:47 +0200
+
+open-xchange-userfeedback (7.8.4-8) stable; urgency=medium
+
+  * Build for patch 2017-08-07 (4304)
+
+ -- Martin Schneider <martin.schneider@open-xchange.com>  Tue, 01 Aug 2017 15:03:12 +0200
+
+open-xchange-userfeedback (7.8.4-7) stable; urgency=medium
+
+  * Build for patch 2017-07-24 (4285)
+
+ -- Martin Schneider <martin.schneider@open-xchange.com>  Mon, 17 Jul 2017 11:07:13 +0200
+
+open-xchange-userfeedback (7.8.4-6) stable; urgency=medium
+
+  * Build for patch 2017-07-10 (4257)
+
+ -- Martin Schneider <martin.schneider@open-xchange.com>  Mon, 03 Jul 2017 15:59:46 +0200
+
+open-xchange-userfeedback (7.8.4-5) stable; urgency=medium
+
+  * Build for patch 2017-06-26 (4233)
+
+ -- Martin Schneider <martin.schneider@open-xchange.com>  Wed, 21 Jun 2017 10:36:33 +0200
+
+open-xchange-userfeedback (7.8.4-4) stable; urgency=medium
+
+  * Build for patch 2017-06-08 (4180)
+
+ -- Martin Schneider <martin.schneider@open-xchange.com>  Tue, 06 Jun 2017 16:28:10 +0200
+
+open-xchange-userfeedback (7.8.4-3) stable; urgency=medium
+
+  * First candidate for 7.8.4 release
+
+ -- Martin Schneider <martin.schneider@open-xchange.com>  Fri, 19 May 2017 13:33:11 +0200
+
+open-xchange-userfeedback (7.8.4-2) stable; urgency=medium
+
+  * Second preview of 7.8.4 release
+
+ -- Martin Schneider <martin.schneider@open-xchange.com>  Thu, 04 May 2017 15:14:40 +0200
+
+open-xchange-userfeedback (7.8.4-1) stable; urgency=medium
+
+  * First preview of 7.8.4 release
+
+ -- Martin Schneider <martin.schneider@open-xchange.com>  Mon, 03 Apr 2017 15:18:55 +0200
+
+open-xchange-userfeedback (7.8.4-0) unstable; urgency=low
+
+  * Initial release
+
+ -- Martin Schneider <martin.schneider@open-xchange.com>  Wed, 08 Feb 2016 13:37:00 +0100

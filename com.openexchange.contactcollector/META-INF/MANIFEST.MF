@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: The Open-Xchange Contact Collector Service
+Bundle-SymbolicName: com.openexchange.contactcollector
+Bundle-Version: 7.8.4
+Bundle-Vendor: OX Software GmbH
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Import-Package: com.openexchange.exception,
+ com.openexchange.groupware.contexts,
+ com.openexchange.session,
+ javax.mail,
+ javax.mail.internet,
+ javax.mail.internet.idn,
+ javax.mail.util
+Export-Package: com.openexchange.contactcollector

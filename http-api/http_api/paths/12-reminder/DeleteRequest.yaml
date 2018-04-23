@@ -1,0 +1,25 @@
+/reminder?action=delete:
+  put:
+    operationId: deleteReminders
+    tags:
+      - Reminder
+    summary: Deletes reminders.
+    consumes:
+      - application/json
+    parameters:
+      - $ref: "#/parameters/gblQueryParamSession"
+      - in: body
+        name: body
+        description: A JSON array with JSON objects containing the field `id` of the reminders to delete.
+        required: true
+        schema:
+          type: array
+          items:
+            $ref: "#/definitions/ReminderListElement"
+    responses:
+      200:
+        description: |
+          A JSON object containing an array with identifiers of reminders that were not deleted. In case of
+          errors the responsible fields in the response are filled (see [Error handling](#error-handling)).
+        schema:
+          $ref: "#/definitions/RemindersResponse"

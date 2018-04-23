@@ -1,0 +1,95 @@
+open-xchange-cluster-upgrade-from-783 (7.8.4-15) stable; urgency=medium
+
+  * Build for patch 2018-04-12 (4674)
+
+ -- Thorben Betten <thorben.betten@open-xchange.com>  Thu, 12 Apr 2018 22:41:23 +0200
+
+open-xchange-cluster-upgrade-from-783 (7.8.4-14) stable; urgency=medium
+
+  * Build for patch 2018-04-03 (4642)
+
+ -- Thorben Betten <thorben.betten@open-xchange.com>  Tue, 03 Apr 2018 10:43:06 +0200
+
+open-xchange-cluster-upgrade-from-783 (7.8.4-13) stable; urgency=medium
+
+  * Build for patch 2018-03-26 (4619)
+
+ -- Thorben Betten <thorben.betten@open-xchange.com>  Fri, 23 Mar 2018 10:50:46 +0100
+
+open-xchange-cluster-upgrade-from-783 (7.8.4-12) stable; urgency=medium
+
+  * Build for patch 2018-03-12 (4602)
+
+ -- Thorben Betten <thorben.betten@open-xchange.com>  Mon, 12 Mar 2018 11:21:09 +0100
+
+open-xchange-cluster-upgrade-from-783 (7.8.4-11) stable; urgency=medium
+
+  * Build for patch 2018-02-26 (4583)
+
+ -- Thorben Betten <thorben.betten@open-xchange.com>  Mon, 26 Feb 2018 15:46:24 +0100
+
+open-xchange-cluster-upgrade-from-783 (7.8.4-10) stable; urgency=medium
+
+  * Build for patch 2018-02-05 (4555)
+
+ -- Thorben Betten <thorben.betten@open-xchange.com>  Mon, 29 Jan 2018 17:36:10 +0100
+
+open-xchange-cluster-upgrade-from-783 (7.8.4-9) stable; urgency=medium
+
+  * Build for patch 2018-01-22 (4538)
+
+ -- Thorben Betten <thorben.betten@open-xchange.com>  Mon, 15 Jan 2018 11:02:40 +0100
+
+open-xchange-cluster-upgrade-from-783 (7.8.4-8) stable; urgency=medium
+
+  * Build for patch 2018-01-08 (4516)
+
+ -- Thorben Betten <thorben.betten@open-xchange.com>  Tue, 02 Jan 2018 16:58:33 +0100
+
+open-xchange-cluster-upgrade-from-783 (7.8.4-7) stable; urgency=medium
+
+  * Build for Patch 2017-12-11 (4473)
+
+ -- Thorben Betten <thorben.betten@open-xchange.com>  Fri, 08 Dec 2017 16:21:28 +0100
+
+open-xchange-cluster-upgrade-from-783 (7.8.4-6) stable; urgency=medium
+
+  * Build for patch 2017-11-20 (4441)
+
+ -- Thorben Betten <thorben.betten@open-xchange.com>  Thu, 16 Nov 2017 10:16:25 +0100
+
+open-xchange-cluster-upgrade-from-783 (7.8.4-5) stable; urgency=medium
+
+  * Build for patch 2017-11-15 (4448)
+
+ -- Thorben Betten <thorben.betten@open-xchange.com>  Tue, 14 Nov 2017 12:16:54 +0100
+
+open-xchange-cluster-upgrade-from-783 (7.8.4-4) stable; urgency=medium
+
+  * Build for patch 2017-10-30 (4415)
+
+ -- Thorben Betten <thorben.betten@open-xchange.com>  Wed, 25 Oct 2017 15:15:50 +0200
+
+open-xchange-cluster-upgrade-from-783 (7.8.4-3) stable; urgency=medium
+
+  * Build for patch 2017-10-29 (4425)
+
+ -- Thorben Betten <thorben.betten@open-xchange.com>  Mon, 23 Oct 2017 16:20:44 +0200
+
+open-xchange-cluster-upgrade-from-783 (7.8.4-2) stable; urgency=medium
+
+  * Build for patch 2017-10-16 (4394)
+
+ -- Thorben Betten <thorben.betten@open-xchange.com>  Mon, 16 Oct 2017 09:18:18 +0200
+
+open-xchange-cluster-upgrade-from-783 (7.8.4-1) stable; urgency=medium
+
+  * Build for patch 2017-10-02 (4377)
+
+ -- Thorben Betten <thorben.betten@open-xchange.com>  Wed, 27 Sep 2017 14:51:23 +0200
+
+open-xchange-cluster-upgrade-from-783 (7.8.4-0) unstable; urgency=low
+
+  * Initial release
+
+ -- Thorben Betten <thorben.betten@open-xchange.com>  Sun, 17 Sep 2017 12:56:27 +0200
